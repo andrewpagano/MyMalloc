@@ -1,0 +1,20 @@
+Test Cases E and F:
+
+E) Malloc an increasing number of bytes starting with 1 and
+ending at 50. Increase by 1 byte every iteration. Free memory
+when no longer available and at the end.
+This tests for different sizes of malloc()s and also free()s.
+
+F) Randomly choose between a large randomly sized malloc
+or free. Size between 100 and 1000 bytes. Do this 200
+times and free when no memory available and at end.
+This tests for large malloc()s and free()s where there
+is often no memory avilable.
+
+Average Cases: (GetTimeOfDay)
+A: 0.036112
+B: 0.022409
+C: 0.038369
+D: 0.043093
+E: 0.003466
+F: 0.006896
